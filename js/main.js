@@ -1,5 +1,7 @@
 var num = 0;
 var point = 0;
+var answerArray = new Array("shigeru", "night", "shigeru", "shigeru", "night");
+
 $('#startButton').click(function(){
     $("#questionImg").attr("src","./img/questionImg/question" + (num + 1) + ".png");
     $('#text').html(num + 1 + '問目 Shigeru? or Night?');
@@ -11,6 +13,11 @@ $('#startButton').click(function(){
 });
 
 $('.ctlButton').click(function(){
+    // 特典加算部分
+    if (($(this).attr('id') == 'shigeruButton' && answerArray[num - 1] === "shigeru") || ($(this).attr('id') == 'nightButton' && answerArray[num - 1] === "night")) {
+        point++;
+    }
+    // 表示制御
     if (num <= 5) {
         $('#text').html('正解は。。。');
         $('#nightButton').css('display', 'none');
@@ -25,12 +32,20 @@ $('.ctlButton').click(function(){
             $('#theAnswerIs').css('display', 'none');
             if (num === 5) {
                 $('#nextButton').css('display', 'none');
-                $('#text').html('しげるでした。ツイートしよう！');
+                if (answerArray[num - 1] === "shigeru") {
+                    $('#text').html('しげるでした。' + point + '問正解！正解をツイートしよう！');
+                } else {
+                    $('#text').html('夜でした。' + point + '問正解！正解をツイートしよう！');
+                }
                 $('#nightButton').css('display', 'none');
                 $('#shigeruButton').css('display', 'none');
                 $('#tweetButton').css('display', '');
             } else {
-                $('#text').html('しげるでした');
+                if (answerArray[num - 1] === "shigeru") {
+                    $('#text').html('しげるでした');
+                } else {
+                    $('#text').html('夜でした');
+                }
                 $('#nextButton').css('display', '');
             }
         });
@@ -63,4 +78,7 @@ function setRandomImgSize()
 function postTwitter()
 {
     console.log('postTwitter');
+    txt = point  + "問正解しました。";
+    var url = "http://twitter.com/share?url=http://fukase-no-owari.net&text=" + txt;
+    location.href = url;
 }
