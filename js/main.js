@@ -1,5 +1,7 @@
 var num = 0;
+var point = 0;
 $('#startButton').click(function(){
+    $("#questionImg").attr("src","./img/questionImg/question" + (num + 1) + ".png");
     $('#text').html(num + 1 + '問目 Shigeru? or Night?');
     num++;
     $(this).css('display', 'none');
@@ -36,6 +38,7 @@ $('.ctlButton').click(function(){
 });
 
 $('#nextButton').click(function(){
+    $("#questionImg").attr("src","./img/questionImg/question" + (num + 1) + ".png");
     $('#nextButton').css('display', 'none');
     $('#text').html(num + 1 + '問目 Shigeru? or Night?');
     $('#theAnswerIs').css('display', 'none');
