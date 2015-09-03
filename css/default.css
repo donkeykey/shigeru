@@ -1,0 +1,56 @@
+body {
+    color: #aaaaaa;
+    background-color: #000000;
+    background-image: url("../img/bg.png")
+}
+
+img {
+    color: #000000;
+    /*background-color: #ffffff;*/
+    /*border: 2px #000000 solid;*/
+}
+
+.title {
+    margin-top: 30px;
+}
+
+#sns-button {
+    margin: 0 auto;
+}
+
+#ads {
+    margin-top: 10px;
+}
+
+.snsItem{
+    float: left;
+}
+
+.snsContainer {
+    text-align: center;
+}
+
+.snsContainer li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: top;
+}
+
+.Button:hover {
+    cursor:pointer;
+}
+
+.ctlButton:hover {
+    cursor:pointer;
+}
+
+#imgWrapper {
+    overflow:hidden;
+    width:300px;
+    height:450px; 
+}
+
+#questionImg {
+    width:300px;
+    height:450px;
+}
