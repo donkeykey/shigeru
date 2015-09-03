@@ -47,7 +47,8 @@
             <p><div id="imgWrapper" width="300px" height="450px"><img id="questionImg" src="./img/firstImg.png"/></div></p>
             <div id="buttonWrapper">
                 <img class="Button" id="startButton" src="./img/startButton.png" width="300px" height="66px"/>
-                <img style="display:none;" class="Button" id="theAnswerIs" src="./img/theAnswerIs.png" width="300px" height="66px"/>
+                <img style="display:none;" id="theAnswerIs" src="./img/theAnswerIs.png" width="300px" height="66px"/>
+                <img style="display:none;" class="Button" id="nextButton" src="./img/nextButton.png" width="300px" height="66px"/>
                 <img style="display:none;" class="ctlButton" id="nightButton" src="./img/nightButton.png" width="149px" height="66px"/>
                 <img style="display:none;" class="ctlButton" id="shigeruButton" src="./img/shigeruButton.png" width="149px" height="66px"/>
                 <img style="display:none;" class="Button" id="tweetButton" src="./img/tweetButton.png" width="300px" height="66px"/>
