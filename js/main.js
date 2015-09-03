@@ -9,7 +9,7 @@ $('#startButton').click(function(){
 });
 
 $('.ctlButton').click(function(){
-    if (num < 5) {
+    if (num <= 5) {
         $('#text').html('正解は。。。');
         $('#nightButton').css('display', 'none');
         $('#shigeruButton').css('display', 'none');
@@ -20,19 +20,29 @@ $('.ctlButton').click(function(){
             marginLeft: "0px",
             marginTop: "0px"
         }, 1500, function(){
-            $('#text').html(num + 1 + '問目 Shigeru? or Night?');
             $('#theAnswerIs').css('display', 'none');
-            $('#nightButton').css('display', '');
-            $('#shigeruButton').css('display', '');
-            setRandomImgSize();
-            num++;
+            if (num === 5) {
+                $('#nextButton').css('display', 'none');
+                $('#text').html('しげるでした。ツイートしよう！');
+                $('#nightButton').css('display', 'none');
+                $('#shigeruButton').css('display', 'none');
+                $('#tweetButton').css('display', '');
+            } else {
+                $('#text').html('しげるでした');
+                $('#nextButton').css('display', '');
+            }
         });
-    } else if (num === 5) {
-        $('#text').html('ツイートしよう');
-        $('#nightButton').css('display', 'none');
-        $('#shigeruButton').css('display', 'none');
-        $('#tweetButton').css('display', '');
     }
+});
+
+$('#nextButton').click(function(){
+    $('#nextButton').css('display', 'none');
+    $('#text').html(num + 1 + '問目 Shigeru? or Night?');
+    $('#theAnswerIs').css('display', 'none');
+    $('#nightButton').css('display', '');
+    $('#shigeruButton').css('display', '');
+    setRandomImgSize();
+    num++;
 });
 
 $('#tweetButton').click(function(){
