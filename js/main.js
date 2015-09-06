@@ -83,7 +83,7 @@ function setRandomImgSize()
 function postTwitter()
 {
     console.log('postTwitter');
-    txt = "【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】" + "正解数は君の心のなかにある!" + " #9月6日(クロ)" + " #松崎しげるの日";
+    txt = "【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】" + "正解数は君の心のなかにある!" + " #9月6日(クロ)" + " #松崎しげるの日 " + "http://twitter.com/daichi000daichi/status/640514950100684804/photo/1";
     txt = encodeURIComponent(txt);
     var url = "http://twitter.com/share?url=http://shigeru-or-night.com&text=" + txt;
     location.href = url;
