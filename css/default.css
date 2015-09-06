@@ -54,3 +54,18 @@ img {
     width:300px;
     height:450px;
 }
+
+
+.snsItem{
+    float: left;
+}
+
+.snsContainer {
+    text-align: center;
+}
+
+.snsContainer li {
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: top;
+}

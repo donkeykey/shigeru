@@ -2,8 +2,8 @@
 
 class Core
 {
-    private static $url = 'http://fukase-no-owari.net';
-    private static $title = 'しげる';
+    private static $url = 'http://shigeru-or-night.com/';
+    private static $title = '【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】';
 
     public static function getUrlWithQuery($str)
     {
