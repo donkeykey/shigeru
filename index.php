@@ -74,7 +74,7 @@
             </div>
             </div>
             <ul class="snsContainer">
-                <li id="fbItem"><div class="fb-like" data-href="http://shigeru-or-night.com/" data-colorscheme="dark" data-ref="question" data-layout="button_count" data-share="false"></div></li>
+                <li id="fbItem"><div class="fb-like" data-href="http://shigeru-or-night.com/" data-colorscheme="dark" data-ref="【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】" data-layout="button_count" data-share="false"></div></li>
                 <li id="twitterItem"><a href="https://twitter.com/share" class="twitter-share-button" data-text="【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】正解数は君の心のなかにある! http://twitter.com/daichi000daichi/status/640514950100684804/photo/1" data-lang="ja">ツイート</a></li>
                 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
                 <li id="hatenaItem"><a href="http://b.hatena.ne.jp/entry/http://shigeru-or-night.com/" class="hatena-bookmark-button" data-hatena-bookmark-title="【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script></li>
