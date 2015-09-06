@@ -39,7 +39,6 @@
         <link rel="manifest" href="./favicon/manifest.json">
     </head>
     <body>
-    <div class="container">
         <center>
             <div class="container">
             <img class="title" width="300px" height="150px" src="./img/title.png" />
@@ -56,14 +55,13 @@
                 <img class="Button" id="startButton" src="./img/startButton.png" width="300px" height="66px"/>
                 <img style="display:none;" id="theAnswerIs" src="./img/theAnswerIs.png" width="300px" height="66px"/>
                 <img style="display:none;" class="Button" id="nextButton" src="./img/nextButton.png" width="300px" height="66px"/>
-                <img style="display:none;" class="ctlButton" id="nightButton" src="./img/nightButton.png" width="149px" height="66px"/>
-                <img style="display:none;" class="ctlButton" id="shigeruButton" src="./img/shigeruButton.png" width="149px" height="66px"/>
+                <img style="display:none;" class="ctlButton" id="nightButton" src="./img/nightButton.png" width="140px" height="66px"/>
+                <img style="display:none;" class="ctlButton" id="shigeruButton" src="./img/shigeruButton.png" width="140px" height="66px"/>
                 <img style="display:none;" class="Button" id="tweetButton" src="./img/tweetButton.png" width="300px" height="66px"/>
             </div>
             </div>
-            Copyright (C) <?php echo date("Y"); ?> <a href="https://twitter.com/intent/user?user_id=3310629558">だいち</a> & <a href=https://twitter.com/intent/user?user_id=1413010957"">くず</a> All rights reserved.
+            <font size="2">Copyright (C) <?php echo date("Y"); ?> <a href="https://twitter.com/intent/user?user_id=3310629558">だいち</a> & <a href=https://twitter.com/intent/user?user_id=1413010957"">くず</a> All rights reserved.</font>
         </center>
-    </div><!-- container -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/bootstrap.js"></script>
