@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="">
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
-        <title><?php echo Core::getTitle(); ?></title>
+        <title>SHIGERU or NIGHT ~ 夜かと思ったら松崎しげるだった ~</title>
         <meta charset="utf-8">
         <meta keyword="松崎しげる, 夜" />
         <meta name="description" content="SHIGERU or NIGHT ~ 夜かと思ったら松崎しげるだった ~" />
@@ -14,11 +14,11 @@
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta property="og:title" content="<?php echo Core::getTitle(); ?>" />
+        <meta property="og:title" content="SHIGERU or NIGHT ~ 夜かと思ったら松崎しげるだった ~" />
         <meta property="og:description" content="SHIGERU or NIGHT ~ 夜かと思ったら松崎しげるだった ~" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="<?php echo Core::getUrl(); ?>" />
-        <meta property="og:image" content="http://fukase-no-owari.net/resimg/ogp.png" />
+        <meta property="og:url" content="http://shigeru-or-night.com/" />
+        <meta property="og:image" content="http://shigeru-or-night.com/img/ogp.png" />
         <meta property="og:locale" content="ja_JP" />
         <link rel="stylesheet" href="./css/bootstrap.css" media="screen">
         <link rel="stylesheet" href="./css/bootstrap.min.css">
