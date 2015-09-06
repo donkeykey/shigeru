@@ -7,15 +7,15 @@
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
         <title><?php echo Core::getTitle(); ?></title>
         <meta charset="utf-8">
-        <meta keyword="松崎しげる" />
-        <meta name="description" content="松崎しげるのゲームの説明" />
+        <meta keyword="松崎しげる, 夜" />
+        <meta name="description" content="SHIGERU or NIGHT ~ 夜かと思ったら松崎しげるだった ~" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta property="og:title" content="<?php echo Core::getTitle(); ?>" />
-        <meta property="og:description" content="facebookに載せる説明文" />
+        <meta property="og:description" content="SHIGERU or NIGHT ~ 夜かと思ったら松崎しげるだった ~" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="<?php echo Core::getUrl(); ?>" />
         <meta property="og:image" content="http://fukase-no-owari.net/resimg/ogp.png" />
@@ -43,7 +43,7 @@
         <center>
             <div class="container">
             <img class="title" width="300px" height="150px" src="./img/title.png" />
-            <p id="text">Startボタンを押してください</p>
+            <!--<p id="text">Startボタンを押してください</p>-->
             <p><div id="imgWrapper" width="300px" height="450px"><img id="questionImg" src="./img/firstImg.png"/></div></p>
             <div id="buttonWrapper">
                 <img class="Button" id="startButton" src="./img/startButton.png" width="300px" height="66px"/>
@@ -54,7 +54,7 @@
                 <img style="display:none;" class="Button" id="tweetButton" src="./img/tweetButton.png" width="300px" height="66px"/>
             </div>
             </div>
-            Copyright (C) <?php echo date("Y"); ?> <a href="https://twitter.com/intent/user?user_id=3310629558">@daichi000daichi</a> <a href=https://twitter.com/intent/user?user_id=1413010957"">@kzhrknt</a> All rights reserved.
+            Copyright (C) <?php echo date("Y"); ?> <a href="https://twitter.com/intent/user?user_id=3310629558">だいち</a> & <a href=https://twitter.com/intent/user?user_id=1413010957"">くず</a> All rights reserved.
         </center>
     </div><!-- container -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>

@@ -71,14 +71,26 @@ function setRandomImgSize()
 {
     $('#questionImg').css('margin-left', -100 + 'px');
     $('#questionImg').css('margin-top', -100 + 'px');
+    /*
     $('#questionImg').css('width', '900px');
     $('#questionImg').css('height', '1350px');
+    */
+    $('#questionImg').css('width', '1900px');
+    $('#questionImg').css('height', '2350px');
 }
 
+//function postTwitter()
+//{
+//    console.log('postTwitter');
+//    txt = point  + "問正解しました。";
+//    var url = "http://twitter.com/share?url=http://fukase-no-owari.net&text=" + txt;
+//    location.href = url;
+//}
 function postTwitter()
 {
     console.log('postTwitter');
-    txt = point  + "問正解しました。";
-    var url = "http://twitter.com/share?url=http://fukase-no-owari.net&text=" + txt;
+    txt = "【SHIGERU or NIGHT ~ 夜かと思ったら松崎しげるだった ~】" + point  + "問正解しました。#9月6日（クロ） #松崎しげるの日";
+    /*var url = "http://twitter.com/share?url=http://fukase-no-owari.net&text=" + txt;*/
+    var url = "http://twitter.com/share?url=http://shigeru-or-night.com&text=" + txt;
     location.href = url;
 }
