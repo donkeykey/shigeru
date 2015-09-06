@@ -3,7 +3,8 @@ var point = 0;
 var answerArray = new Array("shigeru", "night", "shigeru", "shigeru", "night");
 
 $('#startButton').click(function(){
-    $("#questionImg").attr("src","./img/questionImg/question" + (num + 1) + ".png");
+    $('#questionImg0').css('display', 'none');
+    $('#questionImg1').css('display', '');
     $('#text').html(num + 1 + '問目 Shigeru? or Night?');
     num++;
     $(this).css('display', 'none');
@@ -24,7 +25,7 @@ $('.ctlButton').click(function(){
         $('#nightButton').css('display', 'none');
         $('#shigeruButton').css('display', 'none');
         $('#theAnswerIs').css('display', '');
-        $("#questionImg").animate({ 
+        $(".questionImg").animate({
             width: "300px",
             height: "450px",
             marginLeft: "0px",
@@ -54,6 +55,9 @@ $('.ctlButton').click(function(){
 });
 
 $('#nextButton').click(function(){
+    $('#questionImg' + num).css('display', 'none');
+    var n = num + 1;
+    $('#questionImg' + n).css('display', '');
     $("#questionImg").attr("src","./img/questionImg/question" + (num + 1) + ".png");
     $('#nextButton').css('display', 'none');
     $('#text').html(num + 1 + '問目 Shigeru? or Night?');
@@ -70,27 +74,16 @@ $('#tweetButton').click(function(){
 
 function setRandomImgSize()
 {
-    $('#questionImg').css('margin-left', -100 + 'px');
-    $('#questionImg').css('margin-top', -100 + 'px');
-    /* org
-    $('#questionImg').css('width', '900px');
-    $('#questionImg').css('height', '1350px');
-    */
-    $('#questionImg').css('width', '1900px');
-    $('#questionImg').css('height', '2350px');
+    $('.questionImg').css('margin-left', -100 + 'px');
+    $('.questionImg').css('margin-top', -100 + 'px');
+    $('.questionImg').css('width', '1900px');
+    $('.questionImg').css('height', '2350px');
 }
 
-//function postTwitter()
-//{
-//    console.log('postTwitter');
-//    txt = point  + "問正解しました。";
-//    var url = "http://twitter.com/share?url=http://fukase-no-owari.net&text=" + txt;
-//    location.href = url;
-//}
 function postTwitter()
 {
     console.log('postTwitter');
-    txt = "【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】" + "正解数は君の心のなかにある!"+ " #9月6日(クロ)"+" #松崎しげるの日";
+    txt = "【SHIGERU or NIGHT | 夜かと思ったら松崎しげるだった】" + "正解数は君の心のなかにある!" + " #9月6日(クロ)" + " #松崎しげるの日";
     txt = encodeURIComponent(txt);
     var url = "http://twitter.com/share?url=http://shigeru-or-night.com&text=" + txt;
     location.href = url;

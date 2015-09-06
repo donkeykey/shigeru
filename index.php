@@ -44,7 +44,14 @@
             <div class="container">
             <img class="title" width="300px" height="150px" src="./img/title.png" />
             <!--<p id="text">Startボタンを押してください</p>-->
-            <p><div id="imgWrapper" width="300px" height="450px"><img id="questionImg" src="./img/firstImg.png"/></div></p>
+            <p><div id="imgWrapper" width="300px" height="450px">
+                <img width="300px" height="450px" id="questionImg0" src="./img/firstImg.png"/>
+                <img style="display:none;" class="questionImg" id="questionImg1" src="./img/questionImg/question1.png"/>
+                <img style="display:none;" class="questionImg" id="questionImg2" src="./img/questionImg/question2.png"/>
+                <img style="display:none;" class="questionImg" id="questionImg3" src="./img/questionImg/question3.png"/>
+                <img style="display:none;" class="questionImg" id="questionImg4" src="./img/questionImg/question4.png"/>
+                <img style="display:none;" class="questionImg" id="questionImg5" src="./img/questionImg/question5.png"/>
+            </div></p>
             <div id="buttonWrapper">
                 <img class="Button" id="startButton" src="./img/startButton.png" width="300px" height="66px"/>
                 <img style="display:none;" id="theAnswerIs" src="./img/theAnswerIs.png" width="300px" height="66px"/>
